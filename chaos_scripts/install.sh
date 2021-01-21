@@ -23,7 +23,7 @@ if grep -q "chaos" /etc/hosts
 then
     echo "- Hosts file has already been configured for chaos"
 else
-    cp ~/etc/hosts /etc/hosts
+    cp etc/hosts /etc/hosts
 fi
 
 # Interfaces file configuration
@@ -42,3 +42,7 @@ else
     cp etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf    
 fi
 
+#Setup is done, rebooting
+echo "Done. Rebooting in 3..."
+sleep 3
+reboot
